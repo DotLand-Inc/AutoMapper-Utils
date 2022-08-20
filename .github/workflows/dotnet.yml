@@ -36,4 +36,4 @@ jobs:
       run: dotnet pack
     
     - name: Push
-      run: dotnet nuget push DotLand.Extensions.Mapping.nupkg -k ${{secrets.NUGUET_API_KEY}} -Source https://api.nuget.org/v3/index.json
+      run: dotnet nuget push -s DotLand.Extensions.Mapping.nupkg -k ${{secrets.NUGUET_API_KEY}}
