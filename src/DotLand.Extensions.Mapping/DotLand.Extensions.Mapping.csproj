@@ -3,7 +3,19 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.1</TargetFramework>
     <Nullable>enable</Nullable>
+    <PackageId>DotLand.Extensions.Mapping</PackageId>
+    <ApplicationIcon>trans-min.ico</ApplicationIcon>
+    <Authors>Dotland</Authors>
+    <Company>Dotland</Company>
+    <Descripton>A set of AutoMapper extensions</Descripton>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageTags>AutoMapper, Mapping, Automatization</PackageTags>
+    <RepositoryUrl>https://github.com/DotLand-Inc/AutoMapper-Utils</RepositoryUrl>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="trans-min.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="AutoMapper" Version="11.0.1" />
