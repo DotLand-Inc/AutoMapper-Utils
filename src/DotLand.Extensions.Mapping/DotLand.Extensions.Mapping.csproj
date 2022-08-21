@@ -7,12 +7,11 @@
     <ApplicationIcon>trans-min.ico</ApplicationIcon>
     <Authors>Dotland</Authors>
     <Company>Dotland</Company>
-    <Descripton>A set of AutoMapper extensions</Descripton>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageTags>AutoMapper, Mapping, Automatization</PackageTags>
     <RepositoryUrl>https://github.com/DotLand-Inc/AutoMapper-Utils</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <VersionPrefix>1.0.1</VersionPrefix>
+    <VersionPrefix>1.0.2</VersionPrefix>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
 
