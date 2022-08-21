@@ -1,15 +1,10 @@
 name: .NET
 
 on:
-  create:
-    branches: 
-      - release/**
   push:
-    branches:
-    - main
+    branches: ["main"]
   pull_request:
-    branches:
-    - main
+    branches: ["main"]
 
 jobs:
   build:
