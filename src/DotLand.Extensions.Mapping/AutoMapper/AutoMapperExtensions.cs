@@ -47,8 +47,7 @@ namespace DotLand.Extensions.Mapping.AutoMapper
                 assembly.GetTypes().Where(
                         t => t.IsClass &&
                              !t.IsAbstract &&
-                             t.IsSubclassOf(type) &&
-                             t.GetConstructors(BindingFlags.Instance).Length == 1)
+                             t.BaseType?.Name == type.Name)
                     .InvokeAll(profile, MethodName);
             }
         }

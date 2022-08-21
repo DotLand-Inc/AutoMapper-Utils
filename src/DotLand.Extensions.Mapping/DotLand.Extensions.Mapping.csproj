@@ -11,7 +11,7 @@
     <PackageTags>AutoMapper, Mapping, Automatization</PackageTags>
     <RepositoryUrl>https://github.com/DotLand-Inc/AutoMapper-Utils</RepositoryUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <VersionPrefix>1.0.2</VersionPrefix>
+    <VersionPrefix>1.0.3</VersionPrefix>
     <PackageReadmeFile>readme.md</PackageReadmeFile>
   </PropertyGroup>
 

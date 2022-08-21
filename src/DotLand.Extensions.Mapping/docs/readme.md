@@ -25,8 +25,8 @@ public class Destination
 ```
 
 To configure this mapping using [AutoMapper](https://automapper.org/):
-<br />
-`var config = new MapperConfiguration(cfg => cfg.CreateMap<Order, OrderDto>());`
+
+```var config = new MapperConfiguration(cfg => cfg.CreateMap<Order, OrderDto>());```
 
 The problem is that the number of classes to map can quickly increase and configuration can become slow.
 
@@ -49,4 +49,4 @@ Then you have to configure the profile:
     profile.ConfigureMapping(Assembly.GetExecutingAssembly());
 ```
 
-For more details on how to use the library, please visit the (project repository)[https://github.com/DotLand-Inc/AutoMapper-Utils].
+For more details on how to use the library, please visit the [project repository](https://github.com/DotLand-Inc/AutoMapper-Utils).
