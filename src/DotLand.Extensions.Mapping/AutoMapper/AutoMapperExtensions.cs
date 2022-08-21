@@ -19,6 +19,11 @@ namespace DotLand.Extensions.Mapping.AutoMapper
 
         private const string MethodName = "ConfigureMap";
 
+        /// <summary>
+        /// Configure profile by adding mapping configuration
+        /// </summary>
+        /// <param name="profile">Profile to configure</param>
+        /// <param name="assemblies">Assemblies where to look for models</param>
         public static void ConfigureMapping(this Profile profile, params Assembly?[] assemblies)
         {
             foreach (var assembly in assemblies)
@@ -30,6 +35,11 @@ namespace DotLand.Extensions.Mapping.AutoMapper
             }
         }
 
+        /// <summary>
+        /// Configure profile by adding mapping configuration
+        /// </summary>
+        /// <param name="profile">Profile to configure</param>
+        /// <param name="assembly">Assembly where to look for models</param>
         public static void ConfigureMapping(this Profile profile, Assembly assembly)
         {
             foreach (var type in _mappingConfiguration)
@@ -43,6 +53,13 @@ namespace DotLand.Extensions.Mapping.AutoMapper
             }
         }
 
+        /// <summary>
+        /// Used to ignore in-existent properties mapping
+        /// </summary>
+        /// <param name="expression"><see cref="IMappingExpression"/></param>
+        /// <param name="sourceType">Source Type</param>
+        /// <param name="destinationType">Destination Type</param>
+        /// <returns><see cref="IMappingExpression"/></returns>
         public static IMappingExpression IgnoreAllNonExistent(this IMappingExpression expression, Type sourceType, Type destinationType)
         {
             var flags = BindingFlags.Public | BindingFlags.Instance;
